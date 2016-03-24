@@ -1,0 +1,67 @@
+<ion-view view-title="소식 게시판">
+<ion-content padding="true">
+<div class="row" id="newsfeed-month">
+    4월 알리안츠 소식
+  <div class="col" id="calendar-dday">
+    <button class="button button-balanced">
+      All2man D+2
+    </button>
+  </div>
+</div>
+  <div class="list">
+    <div class="item item-divider">알리안츠 소식</div>
+    <div class="row header newsfeed newsfeed-header">
+      <!-- <div class="col">카테고리</div> -->
+      <div class="col">제목</div>
+      <div class="col">게시일</div>
+      <div class ="col">게시자</div>
+      <div class="col">조회수</div>
+    </div>
+    <div class="row newsfeed newsfeed-int">
+      <!-- <div class="col nf-col-cat">
+        알리안츠 소식
+      </div> -->
+      <div class="col nf-col-tit">All2man 오픈 이벤트</div>
+      <div class="col nf-col-date">16년 4월 15일</div>
+      <div class ="col nf-col-author">All2man</div>
+      <div class ="col nf-col-read">350</div>
+    </div>
+    <div class="row newsfeed newsfeed-int">
+      <!-- <div class="col nf-col-cat">
+        알리안츠 소식
+      </div> -->
+      <div class="col nf-col-tit">가입하고 기프티콘 받자</div>
+      <div class="col nf-col-date">16년 4월 15일</div>
+      <div class ="col nf-col-author">All2man</div>
+      <div class ="col nf-col-read">350</div>
+    </div>
+  </div>
+  <div class="item item-divider">시장동향</div>
+  <div class="row header newsfeed newsfeed-header">
+      <!-- <div class="col">카테고리</div> -->
+      <div class="col">제목</div>
+      <div class="col">게시일</div>
+      <div class ="col">게시자</div>
+      <div class="col">조회수</div>
+    </div>
+  <div class="row newsfeed newsfeed-ext">
+    <!-- <div class="col nf-col-cat">
+      시장동향
+    </div> -->
+    <div class="col nf-col-tit">4월 금융시장 동향</div>
+    <div class="col nf-col-date">16년 4월 16일</div>
+    <div class ="col nf-col-author">All2kid</div>
+    <div class ="col nf-col-read">500</div>
+
+
+  </div>
+  
+<div class="row" ng-repeat="">
+  <div class="col">01</div>
+  <div class="col">{{data.code}}</div>
+  <div class="col">LK {{data.limit}}</div>
+  <div class="col">{{data.account}}</div>
+  <div class="col"><button class="button" ng-click="ctrl.add($index)">Add</button></div>
+</div>
+</ion-content>
+</ion-view>

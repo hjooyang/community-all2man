@@ -21,10 +21,9 @@ angular.module('ionicApp', ['ionic'])
       templateUrl: 'templates/activity.html',
       controller: 'ActivityCtrl'
     })
-    .state('schedule', {
-      url: '/main/schedule',
-      templateUrl: 'templates/schedule.html',
-      controller: 'ScheduleCtrl'
+    .state('newsfeed', {
+      url: '/main/newsfeed',
+      templateUrl: 'templates/newsfeed.html'
     })
     .state('tabs', {
       url: '/tab',
