@@ -21,6 +21,11 @@ angular.module('ionicApp', ['ionic'])
       templateUrl: 'templates/activity.html',
       controller: 'ActivityCtrl'
     })
+    .state('schedule', {
+      url: '/main/schedule',
+      templateUrl: 'templates/schedule.html',
+      controller: 'ScheduleCtrl'
+    })
     .state('tabs', {
       url: '/tab',
       abstract: true,
@@ -35,6 +40,39 @@ angular.module('ionicApp', ['ionic'])
         }
       }
     })
+    .state('tabs.signup-interest', {
+      url: '/signup-interest',
+      views: {
+        'home-tab': {
+          templateUrl: 'templates/signup-interest.html'
+        }
+      }
+    })
+    .state('tabs.signup-interest-work', {
+      url: '/signup-interest-work',
+      views: {
+        'home-tab': {
+          templateUrl: 'templates/signup-interest-work.html'
+        }
+      }
+    })
+    .state('tabs.signup-char', {
+      url: '/signup-char',
+      views: {
+        'home-tab': {
+          templateUrl: 'templates/signup-char.html'
+        }
+      }
+    })
+    .state('tabs.comment', {
+      url: '/signup-comment',
+      views: {
+        'home-tab': {
+          templateUrl: 'templates/signup-comment.html'
+        }
+      }
+    })
+
     .state('tabs.signup-detail', {
       url: '/signup-detail',
       views: {

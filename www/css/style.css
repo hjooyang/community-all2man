@@ -59,6 +59,48 @@ div.main-comp{
 	text-align: center;
 	background-color: cornflowerblue;
 	color: #fff;
+}
 
+.calendar {
+    border-style: solid;
+    border-color: rgba(43, 48, 49, 0.14);
+    border-width: thin;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+}
 
+.calendar-header {
+    font-weight: bolder;
+    font-size: initial;
+    padding-bottom: 5px;
+}
+
+.calendar-item {
+    backface-visibility: initial;
+    width: 100%;
+    font-weight: 700;
+}
+
+.calendar-company {
+	background-color: darkorange;
+	color: #fff;
+}
+
+.calendar-match {
+	background-color: blue;
+	color: #fff;
+}
+
+.calendar-outlook {
+	background-color: darkcyan;
+	color: #fff;
+}
+
+#calendar-month {
+    font-size: 20px;
+}
+
+#calendar-dday {
+	text-align: end;
 }

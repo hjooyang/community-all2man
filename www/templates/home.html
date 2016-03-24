@@ -1,65 +1,26 @@
-<ion-view view-title="기본정보">
+<ion-view view-title="기본정보 입력">
 <ion-content padding="true">
-  <div class="row">
-    <div class="col col-50">
-      <button class="button button-full button-photo-upload">사진 업로드하기</button>
-    </div>
-    <div class="col col-50">
-      <div class="list list-inset">
-        <label class="item item-input">
-          <input type="text" placeholder="English name">
-        </label>
-        <label class="item item-input">
-          <input type="text" placeholder="개인홈피 입력">
-        </label>
-      </div>
-    </div>
-  </div>
+<button class="button button-full button-photo-upload">사진 업로드하기</button>
+  <!-- <div class="row"> -->
 
-  <div class="card">
-    <div class="item item-divider text-center">
-      관심사 (복수체크)
-    </div>
-    <div class="item item-text-wrap">
-      <ion-list>
-      <ion-checkbox ng-model="filter.trip">여행</ion-checkbox>
-      <ion-checkbox ng-model="filter.sports">스포츠</ion-checkbox>
-      <ion-checkbox ng-model="filter.car">자동차</ion-checkbox>
-      <ion-checkbox ng-model="filter.health">헬스 & 뷰티</ion-checkbox>
-      <ion-checkbox ng-model="filter.finance">재테크</ion-checkbox>
-      <ion-checkbox ng-model="filter.movie">영화</ion-checkbox>
-     <ion-checkbox ng-model="filter.lang">어학</ion-checkbox>
-      <ion-checkbox ng-model="filter.music">음악</ion-checkbox>
-      <ion-checkbox ng-model="filter.books">독서</ion-checkbox>
-      <ion-checkbox ng-model="filter.edu">육아 및 교육</ion-checkbox>
-    </ion-list>
-    </div>
+    <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">English name</span>
+    <input type="text" placeholder="John">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">개인홈피 입력</span>
+    <input type="text" placeholder="@twitter">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Email</span>
+    <input type="text" placeholder="john@suhr.com">
+  </label>
+</div>
+
+    <!-- </div> -->
   </div>
-  <div class="card">
-    <div class="item item-divider text-center">
-      관심 직무 (복수체크)
-    </div>
-    <div class="item item-text-wrap">
-      <ion-list>
-		<ion-checkbox ng-model="filter.finance">재무/회계</ion-checkbox>
-		<ion-checkbox ng-model="filter.hr">인사</ion-checkbox>
-		<ion-checkbox ng-model="filter.sales">영업</ion-checkbox>
-		<ion-checkbox ng-model="filter.strat">전략/기획</ion-checkbox>
-		<ion-checkbox ng-model="filter.it">IT</ion-checkbox>
-		<ion-checkbox ng-model="filter.marketing">마케팅</ion-checkbox>
-		<ion-checkbox ng-model="filter.pr">PR</ion-checkbox>
-		<ion-checkbox ng-model="filter.purchase">구매</ion-checkbox>
-		<ion-checkbox ng-model="filter.general">총무</ion-checkbox>
-		<ion-checkbox ng-model="filter.training">교육</ion-checkbox>
-		<ion-checkbox ng-model="filter.digital">디지털</ion-checkbox>
-		<ion-checkbox ng-model="filter.eval">지급/심사</ion-checkbox>
-		<ion-checkbox ng-model="filter.product">계리/상품</ion-checkbox>
-		<ion-checkbox ng-model="filter.stat">통계</ion-checkbox>
-		<ion-checkbox ng-model="filter.etc">기타</ion-checkbox>
-    </ion-list>
-    </div>
-  </div>
-  <button class="button button-full">세부정보 탭 클릭!</button>
+  <!-- <button class="button button-full">세부정보 탭 클릭!</button> -->
    <!--div class="card">
     <div class="item item-divider text-center">
       소셜 계정
@@ -101,6 +62,6 @@
   </a>
     <a class="button icon icon-right ion-chevron-right" href="#/tab/facts">Scientific Facts</a>
   </p-->
-
+  <a class="button button-full icon icon-right ion-chevron-right"href="#/tab/signup-interest">다음 문항으로 이동</a>
 </ion-content>
 </ion-view>

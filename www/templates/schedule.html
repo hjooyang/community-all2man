@@ -1,0 +1,131 @@
+ <ion-view view-title="한 문장으로 소개하기">
+	<ion-content padding="true">
+	 <table class="table table-bordered table-fixed monthview-datetable">
+                <thead>
+                <tr>
+                    <th >
+                        <small class="">Sun</small>
+                    </th>
+                    <th >
+                        <small class="">Sun</small>
+                    </th>
+                    <th >
+                        <small class="">Sun</small>
+                    </th>
+                    <th ng-repeat="day in view.dates.slice(0,7) track by day.date">
+                        <small class="ng-binding">Sun</small>
+                    </th>
+                    <th ng-repeat="day in view.dates.slice(0,7) track by day.date">
+                        <small class="ng-binding">Sun</small>
+                    </th>
+
+                    <th ng-repeat="day in view.dates.slice(0,7) track by day.date">
+                        <small class="ng-binding">Sun</small>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td ng-click="select(view.dates[0].date)" ng-class="getHighlightClass(view.dates[0])" class="ng-binding text-muted">28
+                    </td>
+                    <td ng-click="select(view.dates[1].date)" ng-class="getHighlightClass(view.dates[1])" class="ng-binding text-muted">29
+                    </td>
+                    <td ng-click="select(view.dates[2].date)" ng-class="getHighlightClass(view.dates[2])" class="ng-binding">01
+                    </td>
+                    <td ng-click="select(view.dates[3].date)" ng-class="getHighlightClass(view.dates[3])" class="ng-binding">02
+                    </td>
+                    <td ng-click="select(view.dates[4].date)" ng-class="getHighlightClass(view.dates[4])" class="ng-binding">03
+                    </td>
+                    <td ng-click="select(view.dates[5].date)" ng-class="getHighlightClass(view.dates[5])" class="ng-binding">04
+                    </td>
+                    <td ng-click="select(view.dates[6].date)" ng-class="getHighlightClass(view.dates[6])" class="ng-binding">05
+                    </td>
+                </tr>
+                <tr>
+                    <td ng-click="select(view.dates[7].date)" ng-class="getHighlightClass(view.dates[7])" class="ng-binding">06
+                    </td>
+                    <td ng-click="select(view.dates[8].date)" ng-class="getHighlightClass(view.dates[8])" class="ng-binding">07
+                    </td>
+                    <td ng-click="select(view.dates[9].date)" ng-class="getHighlightClass(view.dates[9])" class="ng-binding">08
+                    </td>
+                    <td ng-click="select(view.dates[10].date)" ng-class="getHighlightClass(view.dates[10])" class="ng-binding">09
+                    </td>
+                    <td ng-click="select(view.dates[11].date)" ng-class="getHighlightClass(view.dates[11])" class="ng-binding">10
+                    </td>
+                    <td ng-click="select(view.dates[12].date)" ng-class="getHighlightClass(view.dates[12])" class="ng-binding">11
+                    </td>
+                    <td ng-click="select(view.dates[13].date)" ng-class="getHighlightClass(view.dates[13])" class="ng-binding">12
+                    </td>
+                </tr>
+                <tr>
+                    <td ng-click="select(view.dates[14].date)" ng-class="getHighlightClass(view.dates[14])" class="ng-binding">13
+                    </td>
+                    <td ng-click="select(view.dates[15].date)" ng-class="getHighlightClass(view.dates[15])" class="ng-binding">14
+                    </td>
+                    <td ng-click="select(view.dates[16].date)" ng-class="getHighlightClass(view.dates[16])" class="ng-binding">15
+                    </td>
+                    <td ng-click="select(view.dates[17].date)" ng-class="getHighlightClass(view.dates[17])" class="ng-binding">16
+                    </td>
+                    <td ng-click="select(view.dates[18].date)" ng-class="getHighlightClass(view.dates[18])" class="ng-binding">17
+                    </td>
+                    <td ng-click="select(view.dates[19].date)" ng-class="getHighlightClass(view.dates[19])" class="ng-binding">18
+                    </td>
+                    <td ng-click="select(view.dates[20].date)" ng-class="getHighlightClass(view.dates[20])" class="ng-binding">19
+                    </td>
+                </tr>
+                <tr>
+                    <td ng-click="select(view.dates[21].date)" ng-class="getHighlightClass(view.dates[21])" class="ng-binding">20
+                    </td>
+                    <td ng-click="select(view.dates[22].date)" ng-class="getHighlightClass(view.dates[22])" class="ng-binding">21
+                    </td>
+                    <td ng-click="select(view.dates[23].date)" ng-class="getHighlightClass(view.dates[23])" class="ng-binding">22
+                    </td>
+                    <td ng-click="select(view.dates[24].date)" ng-class="getHighlightClass(view.dates[24])" class="ng-binding">23
+                    </td>
+                    <td ng-click="select(view.dates[25].date)" ng-class="getHighlightClass(view.dates[25])" class="ng-binding monthview-current">24
+                    </td>
+                    <td ng-click="select(view.dates[26].date)" ng-class="getHighlightClass(view.dates[26])" class="ng-binding">25
+                    </td>
+                    <td ng-click="select(view.dates[27].date)" ng-class="getHighlightClass(view.dates[27])" class="ng-binding">26
+                    </td>
+                </tr>
+                <tr>
+                    <td ng-click="select(view.dates[28].date)" ng-class="getHighlightClass(view.dates[28])" class="ng-binding">27
+                    </td>
+                    <td ng-click="select(view.dates[29].date)" ng-class="getHighlightClass(view.dates[29])" class="ng-binding">28
+                    </td>
+                    <td ng-click="select(view.dates[30].date)" ng-class="getHighlightClass(view.dates[30])" class="ng-binding">29
+                    </td>
+                    <td ng-click="select(view.dates[31].date)" ng-class="getHighlightClass(view.dates[31])" class="ng-binding monthview-selected">30
+                    </td>
+                    <td ng-click="select(view.dates[32].date)" ng-class="getHighlightClass(view.dates[32])" class="ng-binding">31
+                    </td>
+                    <td ng-click="select(view.dates[33].date)" ng-class="getHighlightClass(view.dates[33])" class="ng-binding text-muted">01
+                    </td>
+                    <td ng-click="select(view.dates[34].date)" ng-class="getHighlightClass(view.dates[34])" class="ng-binding text-muted">02
+                    </td>
+                </tr>
+                <tr>
+                    <td ng-click="select(view.dates[35].date)" ng-class="getHighlightClass(view.dates[35])" class="ng-binding text-muted">03
+                    </td>
+                    <td ng-click="select(view.dates[36].date)" ng-class="getHighlightClass(view.dates[36])" class="ng-binding text-muted">04
+                    </td>
+                    <td ng-click="select(view.dates[37].date)" ng-class="getHighlightClass(view.dates[37])" class="ng-binding text-muted">05
+                    </td>
+                    <td ng-click="select(view.dates[38].date)" ng-class="getHighlightClass(view.dates[38])" class="ng-binding text-muted">06
+                    </td>
+                    <td ng-click="select(view.dates[39].date)" ng-class="getHighlightClass(view.dates[39])" class="ng-binding text-muted">07
+                    </td>
+                    <td ng-click="select(view.dates[40].date)" ng-class="getHighlightClass(view.dates[40])" class="ng-binding text-muted">08
+                    </td>
+                    <td ng-click="select(view.dates[41].date)" ng-class="getHighlightClass(view.dates[41])" class="ng-binding text-muted">09
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+  <a class="button button-full button-calm" href="#/main">가입하기</a>
+	</ion-content>
+</ion-view>
+
+
+  </div>
