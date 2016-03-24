@@ -1,0 +1,88 @@
+<ion-view view-title="기본정보">
+<ion-content padding="true">
+  <div class="card">
+    <div class="item item-divider text-center">
+      성향 (복수체크)
+    </div>
+    <div class="item item-text-wrap">
+    <ion-list>
+  		<ion-checkbox ng-model="filter.a">차분</ion-checkbox>
+  		<ion-checkbox ng-model="filter.b">열정</ion-checkbox>
+  		<ion-checkbox ng-model="filter.c">쾌활</ion-checkbox>
+  		<ion-checkbox ng-model="filter.d">고요</ion-checkbox>
+  		<ion-checkbox ng-model="filter.e">웃음 많은</ion-checkbox>
+  		<ion-checkbox ng-model="filter.f">내성적</ion-checkbox>
+  		<ion-checkbox ng-model="filter.g">외향적</ion-checkbox>
+  		<ion-checkbox ng-model="filter.h">다혈질</ion-checkbox>
+  		<ion-checkbox ng-model="filter.i">치밀</ion-checkbox>
+  		<ion-checkbox ng-model="filter.j">넉살</ion-checkbox>
+  		<ion-checkbox ng-model="filter.k">지구력</ion-checkbox>
+  		<ion-checkbox ng-model="filter.l">순발력</ion-checkbox>
+  		<ion-checkbox ng-model="filter.m">위트/재치</ion-checkbox>
+  		<ion-checkbox ng-model="filter.n">완벽</ion-checkbox>
+  		<ion-checkbox ng-model="filter.o">재빠른</ion-checkbox>
+      <ion-checkbox ng-model="filter.p">공상가</ion-checkbox>
+      <ion-checkbox ng-model="filter.q">현실적</ion-checkbox>
+      <ion-checkbox ng-model="filter.r">의리</ion-checkbox>
+      <ion-checkbox ng-model="filter.s">나눔</ion-checkbox>
+      <ion-checkbox ng-model="filter.t">실속</ion-checkbox>
+    </ion-list>
+    </div>
+  </div>
+   <!--div class="card">
+    <div class="item item-divider text-center">
+      소셜 계정
+    </div>
+    <div class="item item-text-wrap">
+      <div class="list">
+        <label class="item item-input ">
+          <span class="input-label">인스타그램</span>
+          <input type="text">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">페이스북</span>
+          <input type="text">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">블로그</span>
+          <input type="text">
+        </label>
+      </div>
+    </div>
+  </div-->
+  <div class="card">
+    <div class="item item-divider text-center">
+      기타 정보 입력
+    </div>
+    <div class="item item-text-wrap item-floating-label">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">본인을 한 문장으로 표현</span>
+          <input type="text" placeholder="본인을 한 문장으로 표현해주세요">
+        </label>
+      </div>
+    </div>
+  </div>
+    <div class="item item-text-wrap item-floating-label">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">
+            예시) #마포열정남 #설현 #Joos
+#행복하지말입니다 #벌써40
+</span>
+          <input type="text" placeholder="나를 표현하는 단어 5가지를 #(          )로 작성해주세요.">
+        </label>
+      </div>
+    </div>
+  </div>
+  <a href="#/main">
+    <button class="button button-full button-calm">
+      가입하기
+    </button>
+  </a>
+    <a class="button icon icon-right ion-chevron-right" href="#/tab/facts">Scientific Facts</a>
+  </p>
+    <!-- <button class="button button-full">세부정보 탭 클릭!</button> -->
+
+</ion-content>
+</ion-view>
