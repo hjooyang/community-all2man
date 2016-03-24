@@ -23,7 +23,8 @@ angular.module('ionicApp', ['ionic'])
     })
     .state('newsfeed', {
       url: '/main/newsfeed',
-      templateUrl: 'templates/newsfeed.html'
+      templateUrl: 'templates/newsfeed.html',
+      controller: 'ActivityCtrl'
     })
     .state('tabs', {
       url: '/tab',
