@@ -12,6 +12,10 @@ angular.module('ionicApp', ['ionic'])
       url: '/forgot-password',
       templateUrl: 'templates/forgot-password.html'
     })
+    .state('main', {
+      url: '/main',
+      templateUrl: 'templates/main.html'
+    })
     .state('tabs', {
       url: '/tab',
       abstract: true,
