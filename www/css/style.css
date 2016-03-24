@@ -1,3 +1,64 @@
 button.button.button-full.button-photo-upload {
 	height: 150px;
 }
+
+.rep-color {
+	background-color: #019688;
+	color: #fff;
+}
+
+.main-welcome-msg {
+    color: cadetblue;
+    text-align: center;
+    font-size: large;
+    padding-top: 10px;
+}
+
+button.main-dday {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 0 auto;
+}
+
+.btns-main-profile button {
+}
+
+.btns-main-profile >div.row {
+	display: block;	
+}
+
+div.main-comp{
+	margin: 10px;
+}
+
+.btn-sched,
+.btn-news,
+.btn-idea {
+	padding: 25%;
+    font-size: large;
+    font-weight: 600;
+}
+
+.main-menu a{
+	width: 100%;
+}
+
+.btn-idea {
+	height: 44%;
+	background-color: coral;
+}
+
+.btn-sched,
+.btn-news {
+	height: 20%;
+}
+
+.btn-sched {
+	text-align: center;
+	background-color: cornflowerblue;
+	color: #fff;
+
+
+}

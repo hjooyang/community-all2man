@@ -1,64 +1,100 @@
+
 <ion-view title="Main">
+  <ion-nav-bar class="bar-stable" align-title="center">
+    <ion-nav-buttons  side="left">
+        <button class="button" ng-click="clickButton()">
+          <i class="button-icon icon ion-home" href="#/main"></i>
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons  side="right">
+      <a class="button button-small" href="#/sign-up">로그아웃</a>
+        <!-- <i class="button-icon icon ion-home"></i> -->
+        <!--i class="button-icon icon ion-loading-a" ng-show="loader.loading"></i-->
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
   <ion-content>
   <!-- <div class="col"> -->
   <div class="row">
-    <div class="col col-60">
-        000님 환영합니다!      
+    <div class="col col-60 main-welcome-msg">
+        정해원님 환영합니다!      
     </div>
     <div class="col">
-      <a href="#/sign-up" class="button button-small"> 로그아웃</a>
+      <!-- <a href="#/sign-up" class="button button-small"> 로그아웃</a> -->
     </div>
   </div>
   <div class="row">
-    <div class=" col col-60">
-      
+    <div class=" col col-30">
       <div class="row">
-        D-12
-      </div>
-      <div class="row">
-        <button class="button button-small button-outline button-positive">
-          매칭 리포트
-        </button>
-        <button class="button button-small button-outline button-positive">
-        파트너 프로필
+        <button class="button button-outline main-dday">
+          D-12
         </button>
       </div>
-      <div class="row row-20">
-        <div class="col col-100">
-         <button class=" button button-small button-outline button-positive">
-          My Profile
+      <div class="col btns-main-profile">
+        <div class="row row-20">
+          <div class="col col-100" style="text-align: center;">
+           <button class=" button button-small button-outline button-positive" style="width: 150px;">
+            매칭 리포트
+            </button>
+          </div>
+        </div>
+        <div class="row row-20">
+          <div class="col col-100" style="text-align: center;">
+           <button class=" button button-small button-outline button-positive" style="width: 150px;">
+          파트너 프로필
+            </button>
+          </div>
+        </div>
+
+       <!--  <div class="row">
+          <button class="button button-small button-outline button-positive">
+            매칭 리포트
           </button>
+          <button class="button button-small button-outline button-positive">
+          파트너 프로필
+          </button>
+        </div> -->
+        <div class="row row-20">
+          <div class="col col-100" style="text-align: center;">
+           <button class=" button button-small button-outline button-positive" style="width: 150px;">
+            My Profile
+            </button>
+          </div>
         </div>
       </div>
     </div>
     <div class="col">
-      <button class="button button-full button-photo-upload">사진 업로드하기</button>
+      <button class="button button-full button-photo-upload ">사진 업로드하기</button>
     </div>
   </div>
 
 <div class="row">
-  <div class="col-40">
-    <div class="card row"> 
-      <a href="#/main/schedule">
-        <div class="item item-text-wrap main-card" >        
-          활동하기 (스케줄러)
+  <div class="col">
+    <div class=" row main-menu"> 
+     <!--  <a href="#/main/activity">
+        <div class="item item-text-wrap main-card btn-sched" >        
+          활동하기
         </div>
-      </a>
+      </a> -->
+      <a class="button button-full btn-sched ">활동하기</a>
     </div>
-    <div class="card row">
-      <a href="#/main/schedule">
-        <div class="item item-text-wrap main-card" >        
+    <div class=" row main-menu">
+      <!-- <a href="#/main/schedule">
+        <div class="item item-text-wrap main-card btn-news" >        
           뉴스피드
         </div>
-      </a>
+      </a> -->
+      <a class="button button-full btn-news rep-color">뉴스피드</a>
+
     </div>
   </div>
-  <div class="col card">
-    <a href="#/main/schedule">
-        <div class="item item-text-wrap main-card" >        
+  <div class="col main-menu">
+    <a class="button button-full btn-idea rep-color">Idea for Ideal</a>
+ <!--    <a href="#/main/schedule">
+        <div class="item item-text-wrap main-card btn-idea" >        
           Idea for Ideal
         </div>
-      </a>
+      </a> -->
    </div>
 </div>
 

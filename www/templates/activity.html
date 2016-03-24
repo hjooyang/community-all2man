@@ -1,0 +1,32 @@
+<ion-view view-title="기본정보">
+<ion-content padding="true">
+<div class="row">
+  <div class="col col-30">
+    April
+  </div>
+  <div class="col">
+    All2man D+2
+  </div>
+</div>
+<div class="row header">
+  <div class="col" >일</div>
+    <div class="col" >월</div>
+      <div class="col" >일</div>
+        <div class="col" >일</div>
+          <div class="col" >일</div>
+            <div class="col" >일</div>
+              <div class="col" >일</div>
+  <div class="col">Service Code</div>
+  <div class="col">Pay Limit</div>
+  <div class="col">Account Number to Use</div>
+  <div class="col"></div>
+</div>
+<div class="row" ng-repeat="data in ctrl.data">
+  <div class="col">{{data.name}}</div>
+  <div class="col">{{data.code}}</div>
+  <div class="col">LK {{data.limit}}</div>
+  <div class="col">{{data.account}}</div>
+  <div class="col"><button class="button" ng-click="ctrl.add($index)">Add</button></div>
+</div>
+</ion-content>
+</ion-view>

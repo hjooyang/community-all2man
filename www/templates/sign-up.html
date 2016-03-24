@@ -1,4 +1,15 @@
 <ion-view view-title="All2man">
+<ion-nav-bar class="bar-stable" align-title="center">
+  <ion-nav-buttons  side="left">
+      <button class="button" ng-click="clickButton()">
+        <!-- <i class="button-icon icon ion-home"></i> -->
+      </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons  side="right">
+      <!--i class="button-icon icon ion-loading-a" ng-show="loader.loading"></i-->
+  </ion-nav-buttons>
+</ion-nav-bar>
+
   <ion-content>
     <div class="list">
       <label class="item item-input">
@@ -11,7 +22,7 @@
       </label>
     </div>
     <div class="padding">
-      <button class="button button-block button-positive" ng-click="signUp(user)">
+      <button class="button button-block rep-color" ng-click="signUp(user)">
         Login
       </button>
       <p class="text-center">

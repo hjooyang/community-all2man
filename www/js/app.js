@@ -16,6 +16,11 @@ angular.module('ionicApp', ['ionic'])
       url: '/main',
       templateUrl: 'templates/main.html'
     })
+    .state('activity', {
+      url: '/main/activity',
+      templateUrl: 'templates/activity.html',
+      controller: 'ActivityCtrl'
+    })
     .state('tabs', {
       url: '/tab',
       abstract: true,
@@ -96,4 +101,8 @@ angular.module('ionicApp', ['ionic'])
 
 .controller('HomeTabCtrl', function($scope) {
   console.log('HomeTabCtrl');
+})
+.controller('ActivityCtrl', function($scope) {
+
+   
 });
