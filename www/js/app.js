@@ -58,8 +58,8 @@ angular.module('ionicApp', ['ionic', 'ionic-ratings'])
       url: '/prog',
       views: {
         'prog-tab': {
-          templateUrl: 'templates/prog.html'
-          // controller: 'HomeTabCtrl'
+          templateUrl: 'templates/prog.html',
+          controller: 'HomeTabCtrl'
         }
       }
     })
@@ -191,6 +191,12 @@ angular.module('ionicApp', ['ionic', 'ionic-ratings'])
     {id: 3, value:'아이디어3'},
     {id: 4, value:'아이디어4'},
     {id: 5, value:'아이디어5'},
+  ];
+
+  $scope.ideaprogs = [
+    {id: 1, value: 'All2man 프로젝트 진행상황', progress: 'progress-h.png'},
+    {id: 2, value:'태블릿 피씨 미팅룸 비치를 통한 종이사용 감소 프로젝트', progress: 'm'},
+    {id: 3, value:'유지율 향상을 위한 조기회차 관리 프로젝트', progress: 'l'}
   ];
 
   $scope.ratingsObject = {
