@@ -1,7 +1,7 @@
 Ionic App Base
 =====================
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/hjooyang/mytest-com)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/hjooyang/community-all2man)
 
 
 A starting project for Ionic that optionally supports using custom SCSS.
