@@ -186,11 +186,11 @@ angular.module('ionicApp', ['ionic', 'ionic-ratings'])
 
 .controller('HomeTabCtrl', function($scope) {
   $scope.ideas = [
-    {id: 1, value: '아이디어1'},
-    {id: 2, value:'아이디어2'},
-    {id: 3, value:'아이디어3'},
-    {id: 4, value:'아이디어4'},
-    {id: 5, value:'아이디어5'},
+    {id: 1, value: 'Digital Light up'},
+    {id: 2, value:'HIT'},
+    {id: 3, value:'One click'},
+    {id: 4, value:'GM'},
+    {id: 5, value:'All2man'},
   ];
 
   $scope.ideaprogs = [
